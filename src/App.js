@@ -14,7 +14,7 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
-          <img src={logo} className={this.state.logo} alt="logo" onMouseEnter = {this.handleMouseEnter.bind(this)} onMouseLeave = {this.handleMouseLeave.bind(this)}/>
+          <img src={logo} className={this.state.logo} alt="logo" onMouseEnter={this.handleMouseEnter.bind(this)} onMouseLeave={this.handleMouseLeave.bind(this)}/>
           <h2>Welcome to React</h2>
         </div>
         <p className="App-intro">
