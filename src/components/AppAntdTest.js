@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Layout, Menu, Breadcrumb, Icon } from 'antd';
 import 'antd/dist/antd.css'
 import '../App.css';
+import AppAntdTable from '../components/AppAntdTable';
 
 const { Header, Footer, Sider, Content } = Layout;
 const { SubMenu } = Menu;
@@ -62,13 +63,15 @@ class AppAntdTest extends Component {
                       </Menu>
               </Sider>
             <Layout>
-              <Breadcrumb style={{ padding: '0 50px' }}>
+              <Breadcrumb style={{ padding: '0 50px', textAlign: 'left' }}>
                     <Breadcrumb.Item>Home</Breadcrumb.Item>
                     <Breadcrumb.Item>List</Breadcrumb.Item>
                     <Breadcrumb.Item>App</Breadcrumb.Item>
               </Breadcrumb>
               <Content style={{ padding: '0 50px', textAlign: 'left' }}>
-                <div style={{ background: '#fff', padding: 24, minHeight: 280 }}>Content</div>
+                <div style={{ background: '#fff', padding: 24, minHeight: 280 }}>
+                 <AppAntdTable></AppAntdTable>
+                </div>
             </Content>
             </Layout>  
           </Layout>
